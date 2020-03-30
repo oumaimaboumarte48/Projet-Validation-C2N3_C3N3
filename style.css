@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 50px;
+    background-color: #a8c7db;
+}
+.logo{
+    margin-right: auto;
+}
+
+.fa-nav{
+    list-style: none;
+    font-size: 25px;
+    font-family:sans-serif;
+    
+}
+
+.fa-nav li{
+    display: inline-block;
+    padding: 0 25px;
+}
+
+.fa-nav li a{
+    color: #000;
+}
+
+.fa-nav li a.co-Acceil{
+    color: blue;
+}
+
+.fa-nav li i.fa-globe{
+   margin-left: 3em;
+   cursor: pointer;
+}
+
+.Sd{
+    text-align: center;
+    font-size: 25px;
+    background-color: #ffcc16;
+    z-index: 1;
+    animation: slide 2s ease;
+}
+
+@keyframes slide{
+    0%{
+        opacity: 0;transform: translateY(-100px)
+    }
+    100%{
+        opacity: 1;transform: translateY(0px);
+    }
+ }
+
+.Sd h4{
+    text-transform: uppercase;
+    color: #046b93;
+}
+.Sd p{
+    margin-top: 10px;
+    color: #1696ff;
+    
+}
+
+.corona{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.corona h2{
+    text-align: center;
+    font-size: 30px;
+    color: #127EAA;
+}
+
+.corona .test {
+    margin-top: 5em;
+}
+
+.corona .pra{
+    text-align: center;
+    margin-top: 1em;
+    font-size: 40px;
+    color: #898989;
+    
+}
+
+.image{
+    opacity: 0;
+    animation: captionText .5s ease forwards;
+    animation-delay:2s ;
+}
+
+@keyframes captionText{
+    0%{
+        opacity: 0;transform: translateX(-100px)
+    }
+    100%{
+        opacity: 1;transform: translateX(0px);
+    }
+}
+
+.test button{
+    margin-top: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #127EAA;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    font-size: 25px;
+    padding: 15px 250px;
+}
+.test button:hover{
+    background: #046b93;
+}
+.test button:active{
+    transform: translateY(4px);
+    box-shadow: 0px 2px 1px #1696ff;
+}
+
