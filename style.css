@@ -1,22 +1,22 @@
 *{
+    
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 a{
+
     text-decoration: none;
 }
 
 header{
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -o-flex;
+    
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 0 50px;
-    background-color: #a8c7db;
+    background: url("img/Merged\ bar-3.svg");
 }
 .logo{
     margin-right: auto;
@@ -50,7 +50,7 @@ header{
 .Sd{
     text-align: center;
     font-size: 25px;
-    background-color: #ffcc16;
+    background-color: #FFC83D;
     z-index: 1;
     animation: slide 2s ease;
 }
@@ -78,7 +78,19 @@ header{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    opacity: 0;
+    animation: Text .5s ease forwards;
+    animation-delay:2s ;
     
+}
+
+@keyframes Text{
+    0%{
+        opacity: 0;transform: translateZ(-100px)
+    }
+    100%{
+        opacity: 1;transform: translateZ(0px);
+    }
 }
 
 .corona h2{
@@ -116,7 +128,7 @@ header{
 
 .test button{
     margin-top: 1em;
-    font-family: Arial, Helvetica, sans-serif;
+    
     background: #127EAA;
     text-align: center;
     cursor: pointer;
@@ -132,4 +144,21 @@ header{
     transform: translateY(4px);
     box-shadow: 0px 2px 1px #1696ff;
 }
+
+.genéral{
+    text-align: center;
+    
+}
+.grid-container {
+    margin-top: 3em;
+   display: flex;
+   
+    
+}
+
+
+
+
+
+
 
